@@ -14,44 +14,113 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 
 </head>
 
 <body font-family: "Manrope", serif;>
     <header class="w-10/12 mx-auto">
         
-        <div class="lg flex justify-between items-center mt-24">
-            <!-- header content -->
-            <div class="lg w-3/5 gap-5">
-                <h1 class="sm text-5xl lg text-7xl font-bold text-slate-900">It's good <br> tea time at The <br> Tea House</h1>
-                <p class="text-lg text-grey-400 font-medium my-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-4 rounded-xl">Explore More <i class="fa-solid fa-arrow-right"></i></button>
+        <div class="lg:flex justify-between items-center sm:gap-5 lg:gap-8 my-24">
+            <!-- header text content -->
+            <div class="lg:w-3/5 ">
+                <h1 class="sm:text-5xl md:text-6xl lg:text-7xl font-bold text-stone-700">It's good <br> tea time at The <br> Tea House</h1>
+                <p class="text-l text-grey-500 font-medium my-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="text-white bg-gradient-to-r from-orange-400 to-red-400 px-5 py-4 rounded-xl">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
              </div>
     
-             <!-- header image -->
-              <div class="relative">
-                 <img src="images/banner.png" alt="creat a image for banner">
-                 <button class="flex justify-center items-center gap-3 px-6 py-4 shadow-2xl rounded-xl abaolute -top-20 ">
-                    <div class="text-3xl text-yellow-500">
-                        <i class="fa-solid fa-star "></i>
-                    </div>
-                    <div>
-                        <h3 class="text-3xl font-extrabold text-yellow-500">5.00</h3>
-                        <p class="text-base text-grey-500 font-600">Trust Pilot Ratings</p>
-                    </div>
-                 </button>
-                 <!-- <div class="flex justify-center items-center gap-3 px-6 py-4 shadow-xl abaolute">
-                  
-                 </div> -->
-              </div>
-        </div>
-        
-
-         
-        
+             <!-- header image content -->
+             <div class="relative">
+                <div class="">
+                    <img src="images/banner.png" alt="">
+                </div>
+                <div class="absolute bottom-4 left-12 rounded-lg bg-white z-10 shadow-lg">
+                    <button class="flex justify-between items-center px-7 py-4">
+                        <div class="text-3xl text-yellow-500">
+                            <i class="fa-solid fa-star "></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-extrabold text-yellow-500">5.00</h3>
+                            <p class="text-base text-grey-500 font-600">Trust Pilot Ratings</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>    
     </header>
-    <main>
 
+    <main class="w-10/12 mx-auto">
+        <!-- products section -->
+         <div class="mb-36">
+             <!-- products title -->
+            <div class="w-9/12 mx-auto text-center ">
+                <h2 class="sm:text-3xl lg:text-5xl font-extrabold text-stone-600 mb-5">Our Featured Products</h2>
+                <p class="text-base text-gray-500 font-medium mb-12">The work of professional tea tasters consists of appreciating the qualities of tea leaves, as well as their particularities, in order to choose the best qualities according to the market they are targeting.</p>
+             </div>
+             <!-- products image content -->
+              <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                <div class="px-8 py-8 shadow-lg rounded-lg bg-gradient-to-b from-gray-300 to-stone-50">
+                    <img src="images/tea-1.png" alt="a cup of tea" class="mb-8 mx-auto"> 
+                        <h3 class="text-2xl text-stone-600 font-extrabold mb-3">Milk Tea</h3>
+                        <p class="text-base text-gray-500 font-semibold">Creamer could be replaced by fresh milk</p>
+                </div>
+                <div class="px-8 py-8 shadow-lg rounded-lg bg-gradient-to-b from-gray-300 to-stone-50">
+                    <img src="images/tea-2.png" alt="a cup of tea" class="mb-8 mx-auto">
+                        <h3 class="text-2xl text-stone-600 font-extrabold mb-3">Black Tea</h3>
+                        <p class="text-base text-gray-500 font-semibold">Creamer could be replaced by fresh milk</p>
+                </div>
+                <div class="px-8 py-8 shadow-lg rounded-lg bg-gradient-to-b from-gray-300 to-stone-50">
+                    <img src="images/tea-3.png" alt="a cup of tea" class="mb-8 mx-auto">
+                        <h3 class="text-2xl text-stone-600 font-extrabold mb-3">Lemon Tea</h3>
+                        <p class="text-base text-gray-500 font-semibold">Creamer could be replaced by fresh milk</p>
+                </div>
+                <div class="px-8 py-8 shadow-lg rounded-lg bg-gradient-to-b from-gray-300 to-stone-50">
+                    <img src="images/tea-4.png" alt="a cup of tea" class="mb-8  mx-auto">
+                        <h3 class="text-2xl text-stone-600 font-extrabold mb-3">Green Tea</h3>
+                        <p class="text-base text-gray-500 font-semibold">Creamer could be replaced by fresh milk</p>
+                </div>
+              </div>
+         </div>
+
+         <!-- great tea section -->
+          <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-5 mb-32">
+            <!-- box section -->
+             <div class="grid grid-cols-2 grid-rows-3 gap-4">
+                <div class="h-36 rounded-xl bg-gradient-to-r from-red-100 to-red-50"></div>
+                <div class="grid row-span-2 rounded-xl bg-gradient-to-b from-red-100 to-red-50">
+                    <img src="images/fresh-1.png" alt="a tea image" class="mx-auto my-auto">
+                </div>
+                <div class="grid row-span-2 rounded-xl bg-gradient-to-b from-blue-100 to-blue-50">
+                    <img src="images/fresh-2.png" alt="a tea image" class="mx-auto my-auto">
+                </div>
+                <div class="h-36 rounded-xl bg-gradient-to-r from-blue-100 to-blue-50"></div>
+             </div>
+             <!-- content section -->
+              <div>
+                <div>
+                    <h2 class="sm:text-3xl lg:text-5xl text-stone-600 font-extrabold mb-5">Great Tea, Freshly Presented</h2>
+                    <p class="text-base text-gray-600 font-normal mb-8">The professional tasting is carried out without adding milk, lemon, sugar or other elements, in order to appreciate only the characteristics of the product. At a later stage, it can be decided to modify the grammage, the infusion time and the products that are added, in order to obtain an optimum result with the leaves that are being evaluated.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl text-stone-600 font-extrabold mb-3">Unique Taste</h4>
+                    <p class="text-base text-gray-600 font-medium mb-5">This is the mechanics of the tasting, which, as you can see, is accessible to everyone. We only need a few basic utensils, </p>
+                    <h4 class="text-xl text-stone-600 font-extrabold">Premium Quality</h4>
+                    <p class="text-base text-gray-600 font-medium"> For example, it is common in tastings aimed at the Anglo-Saxon market to add a certain amount of milk, since this is the preferred form of consumption in this cultural space.</p>
+                </div>
+              </div>
+          </div>
+    
+        
     </main>
     <footer>
 
